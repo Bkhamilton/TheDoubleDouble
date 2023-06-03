@@ -1,15 +1,15 @@
 import * as React from "react"
 import NavBar from '../components/NavBar/NavBar.jsx';
-import TheDoubleDouble from "../components/TheDoubleDouble/TheDoubleDouble.jsx";
 import '../constants/typefaces.css';
 import Seo from "../components/seo"
 import Footer from "../components/Footer/Footer.jsx";
+import BlogPost from "../components/BlogPost/BlogPost.jsx";
 
-export default function IndexPage() {
+export default function BlogPostPage() {
   return (
     <div className="main-background">
       <NavBar/>
-      <TheDoubleDouble/>
+      <BlogPost/>
       <Footer/>
     </div>
   )
@@ -20,4 +20,4 @@ export default function IndexPage() {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="The Double Double" />
+export const Head = () => <Seo title="Blog Post" />

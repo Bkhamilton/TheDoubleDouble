@@ -1,0 +1,52 @@
+.home-title-container {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.home-title-text {
+    font-size: 52px;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+.title-host-container {
+    position: relative;
+    bottom: 45px;
+}
+
+.title-host-text {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .home-title-text {
+        font-size: 48px;
+    }
+
+    .title-host-text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-title-text {
+        font-size: 44px;
+    }
+
+    .title-host-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-title-text {
+        font-size: 40px;
+    }
+
+    .title-host-text {
+        font-size: 15px;
+    }
+}
+

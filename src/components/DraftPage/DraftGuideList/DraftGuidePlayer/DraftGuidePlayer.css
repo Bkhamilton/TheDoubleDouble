@@ -1,0 +1,209 @@
+.draft-guide-player-container {
+    display: flex;
+    width: 100%;
+    padding: 0% 5%;
+    place-content: center;
+}
+
+.draft-guide-player-button {
+    align-items: center;
+    height: 100%;
+    font-family: 'Roboto';
+    background-color: #6CC5FE;
+}
+
+.draft-guide-player-button:hover {
+    background-position: 0 0;
+}
+
+.button-open {
+    width: 1000px;
+    border: 4px solid black;
+    transition: width 0.3s ease;
+}
+
+.button-close {
+    width: 530px;
+    border: 2px solid black;
+    transition: width 0.3s ease;
+}
+
+.draft-guide-player-main-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5% 0%;
+}
+
+.draft-guide-player-rank {
+    padding: 0px 5px;
+}
+
+.stat-cont {
+    display: flex;
+}
+
+.rank-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.draft-guide-player-name span {
+    font-weight: bold;
+}
+
+.draft-guide-info-text {
+    font-size: 20px;
+}
+
+.draft-guide-player-name {
+    margin-left: 10px; /* set the gap between rank and name */
+}
+
+.draft-guide-player-size {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* set the gap between height and weight */
+}
+
+.draft-guide-box-separator {
+    height: 2px;
+    background-color: black;
+    position: relative;
+    right: 6px;
+}
+
+.box-width-close {
+    width: 526px;
+    transition: width 0.3s ease;
+}
+
+.box-width-open {
+    width: 996px;
+    transition: width 0.3s ease;
+}
+
+.draft-guide-stat-text {
+    font-size: 16px;
+}
+
+.general-stat-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 7px;
+}
+
+.stat-label-large {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.draft-player-info-container {
+    padding: 2% 2%;
+}
+
+.box-header-text {
+    font-size: 14px;
+    color: white;
+}
+
+.stat-margin {
+    padding: 0px 0.5%;
+}
+
+.draft-guide-side-stats {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1010px) {
+    .box-width-close {
+        width: 90%;
+    }
+    
+    .box-width-open {
+        width: 90%;
+    }
+
+    .button-open {
+        width: 90%;
+    }
+    
+    .button-close {
+        width: 90%;
+    }
+
+    .draft-guide-box-separator {
+        width: 79vw;
+    }
+
+    .stat-label {
+        font-size: 10px;
+    }
+
+    .draft-guide-side-stats {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .draft-guide-mobile-stats {
+        display: none;
+    }
+
+    .box-flex-display {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .draft-text-desktop {
+        display: none;
+    }
+
+    .box-width-close {
+        width: 100%;
+    }
+    
+    .box-width-open {
+        width: 100%;
+    }
+
+    .button-open {
+        width: 100%;
+    }
+    
+    .button-close {
+        width: 100%;
+    }
+
+    .draft-guide-player-container {
+        padding: 0%;
+    }
+
+    .draft-guide-box-separator {
+        width: 100vw;
+    }
+
+    .draft-guide-player-size {
+        margin-left: auto;
+    }
+
+    .draft-guide-side-stats {
+        display: none;
+    }
+
+    .draft-player-info-container {
+        padding: 2% 0%;
+    }
+
+    .stat-label {
+        margin-right: 5px;
+    }
+  }

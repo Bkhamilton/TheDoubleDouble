@@ -1,0 +1,107 @@
+.contact-node {
+    background-color: #4EBAFF;
+    flex-direction: row;
+    margin-bottom: 5vh;
+    padding: 0.5% 1%;
+    border-top: 2px solid #4EBAFF;
+    box-shadow: 0px 8px 8px 4px rgba(53, 53, 53, 0.25);
+    border-radius: 4px;
+}
+
+.contact-node-info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 2% 5%;
+}
+
+.contact-container {
+    display: flex;
+    padding: 2% 5%;
+}
+
+.contact-form {
+    margin-left: auto;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-label {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-text-field {
+    font-family: 'Roboto';
+    font-size: 20px;
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.input-message {
+    height: 12vh;
+}
+
+.send-email-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    padding: 9px;
+    background-color: #252525;
+    border: 2px solid #EFEFEF;
+    border-radius: 8px;
+}
+
+.social-media {
+    padding: 2%;
+}
+
+.icons-container {
+    display: flex;
+}
+
+.icon-background {
+    padding: 4px;
+}
+
+@media screen and (min-width: 880px) {
+    .contact-form {
+        width: 520px;
+    }
+
+    .contact-node {
+        display: flex;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .contact-form {
+        width: 100%;
+    }
+    
+    .contact-node {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-node {
+      width: 92%;
+    }
+}

@@ -1,0 +1,121 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #21a9ff, #289ECD);
+  padding-top: 0.3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-bottom: 2px solid #1C6EA4;
+  height: 130px;
+}
+
+.navbar-logo {
+  position: relative;
+  margin-top: 21px;
+  width: 130px;
+  height: 130px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  padding-right: 2%;
+}
+
+.navbar-brand {
+  margin-top: 5%;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0px 20px;
+  white-space: nowrap;
+  min-width: 40px; /* adjust as needed */
+}
+
+.nav-link {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.menu-icon {
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #fff;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.menu-icon:before,
+.menu-icon:after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 4px;
+  background-color: #fff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-icon:before {
+  transform: translate(-18px, -9px);
+}
+
+.menu-icon:after {
+  transform: translate(-18px, 9px);
+}
+
+.navbar-menu {
+  padding: 0% 2%;
+}
+
+.menu-popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Add transparency to create a modal effect */
+  z-index: 999; /* Ensure the menu pop-up appears above other elements */
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-active {
+  transform: translateX(0);
+}
+
+
+@media screen and (min-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-right {
+    display: none;
+  }
+}

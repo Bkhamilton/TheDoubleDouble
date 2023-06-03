@@ -1,0 +1,17 @@
+/* Styles for the light theme */
+:root {
+    --background-color: #ffffff;
+    --text-color: #1c2a3f;
+    --banner: #393E46;
+    --gray: #eef1f4;
+    --page-text: #121212;
+}
+  
+/* Styles for the dark theme */
+:root[data-theme='dark'] {
+    --background-color: #040303;
+    --text-color: #f1f1f1;
+    --banner: #393E46;
+    --gray: #333333;
+    --page-text: #f1f1f1;
+}

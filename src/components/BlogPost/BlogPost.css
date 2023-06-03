@@ -1,0 +1,33 @@
+.blog-title-text {
+    font-family: 'Roboto', sans-serif;
+    font-size:  42px;
+    font-weight:  bold;
+}
+
+.blog-title {
+    padding-bottom: 8px;
+}
+
+.blog-page-content {
+    width: 100%;
+    text-align: center;
+    padding: 0% 20%;
+}
+
+@media screen and (max-width: 1400px) {
+    .blog-page-content {
+        padding: 0% 15%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .blog-page-content {
+        padding: 0% 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog-page-content {
+        padding: 0% 5%;
+    }
+}
