@@ -1,6 +1,7 @@
 import * as React from 'react';
 import logo from '../../../images/Double Double Logo.jpg';
 import { Link } from 'gatsby';
+import { truncateDescription } from '../../Helpers/utils';
 import './BlogNode.css';
 
 export default function BlogNode({ node }) {
@@ -12,7 +13,7 @@ export default function BlogNode({ node }) {
                     <div className="blog-node-info">
                         <span className='episode-info-text'>{node.publishedDate} | by {node.author.name}</span>
                         <h1 className='shadow-text'>{node.title}</h1>
-                        <span className="episode-description">{node.description.internal.content}</span>
+                        <span className="episode-description">{truncateDescription(node.description.internal.content, 470)}</span>
                     </div>
                     <div className="blog-node-image">
                         <img src={logo} alt={node.title} />

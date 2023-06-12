@@ -23,7 +23,7 @@ export default function NavBar() {
         </button>
         {menuOpen && (
         <div className={`menu-popup-wrapper ${menuOpen ? 'menu-active' : 'menu-off'}`}>
-          <MenuPopup onClick={handleMenuToggle}/>
+          <MenuPopup onClick={handleMenuToggle} active={menuOpen}/>
         </div>
         )}
       </div>

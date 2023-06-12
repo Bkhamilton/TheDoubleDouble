@@ -1,9 +1,16 @@
 import * as React from 'react';
+import showdown from 'showdown';
 import './BlogPost.css';
 
 export default function BlogPost( { node } ) {
+
+  const pageText = node.content.internal.content;
+
+  const converter = new showdown.Converter();
+  const htmlContent = converter.makeHtml(pageText);
+
   return (
-    <div className='blog-page-content'>
+    <div className='blog-page-container'>
         <div>
           <span className='episode-info-text'>{node.publishedDate}</span>
         </div>
@@ -11,9 +18,7 @@ export default function BlogPost( { node } ) {
           <span className='shadow-text blog-title-text'>{node.title}</span>
         </div>
         <span className='episode-description'>by {node.author.name}</span>
-        <div>
-          <h3>{node.content.internal.content}</h3>
-        </div>
+        <div className='blog-content' dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
     </div>
   );
 };

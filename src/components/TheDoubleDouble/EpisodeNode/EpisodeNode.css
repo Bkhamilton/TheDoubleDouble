@@ -47,15 +47,19 @@
 }
 
 .spotify-button {
-    display: flex;
-    background-color: #171717;
-    border: none;
-    padding: 0% 1%;
-    place-items: center;
-    margin-top: 2px;
-    height: 72px;
+    height: 78px;
     border-radius: 12px;
+    border: none;
+    padding: 0%;
+    margin: 0% 6%;
+    background: none;
+    width: auto;
     cursor: pointer;
+}
+
+.spotify-button img {
+    height: 100%;
+    width: 206px;
 }
 
 .spotify-text {
@@ -87,8 +91,36 @@
     }
 }
 
+@media screen and (max-width: 1460px) {
+    .listen-button-container {
+        display: inline-block;
+    }
+
+    .apple-podcast-button {
+        margin: 0%;
+    }
+}
+
 @media screen and (max-width: 880px) {
     .episode-info-container {
         width: 100%;
+    }
+
+    .listen-button-container {
+        display: flex;
+    }
+
+    .apple-podcast-button {
+        margin: 0% 3%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .listen-button-container {
+        display: inline-block;
+    }
+    
+    .spotify-text {
+        font-size: 26px;
     }
 }

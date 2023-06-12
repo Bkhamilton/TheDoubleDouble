@@ -1,0 +1,48 @@
+.socials-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 2rem; /* Adjust the margin as needed */
+  border-radius: 50%;
+  background-color: #212121;
+  border: 2px solid #080808;
+  overflow: hidden;
+}
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 850px) {
+    .social-link {
+        margin: 0 2vw;
+        height: 65px;
+        width: 65px;
+    }
+
+    .social-icon {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .social-link {
+        height: 56px;
+        width: 56px;
+    }
+
+    .social-icon {
+        height: 42px;
+        width: 42px;
+    }
+}

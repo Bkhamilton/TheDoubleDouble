@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import logo from '../../../images/Double Double Logo.jpg';
-import spotifyLogo from '../../../images/Spotify_Logo_RGB_Green.png';
+import spotifyIcon from '../../../images/Spotify_Listen.png';
 import appleIcon from '../../../images/Apple_Podcast_Listen.svg';
 import { truncateDescription, convertTime, formatDuration } from '../../Helpers/utils';
 import './EpisodeNode.css';
@@ -33,13 +33,12 @@ export default function EpisodeNode({ episode }) {
                     <h1 className='shadow-text' style={{ fontSize }}>{episode.name}</h1>
                     <span className='episode-description'>{truncateDescription(episode.description, 320)}</span>
                     <div className='listen-button-container'>
-                        <button className='spotify-button'>
-                            <h3 className='spotify-text'>Listen on</h3>
-                            <img className='spotify-icon' src={spotifyLogo} alt="Spotify Logo"></img>
-                        </button>
-                        <button className='apple-podcast-button'>
+                        <a href={episode.external_urls.spotify} target="_blank" rel="noopener noreferrer" className='spotify-button'>
+                            <img src={spotifyIcon} alt="Spotify Listen Button"></img>
+                        </a>
+                        <a href='https://podcasts.apple.com/us/podcast/the-chase-down/id1555765326?itsct=podcast_box&itscg=30200' target="_blank" rel="noopener noreferrer" className='apple-podcast-button'>
                             <img src={appleIcon} alt="Apple Podcast Listen Button"></img>
-                        </button>
+                        </a>
                     </div>
                     <audio controls>
                         <source src={episode.audio_preview_url} type="audio/mpeg" />

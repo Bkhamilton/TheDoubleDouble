@@ -8,26 +8,35 @@
     padding-bottom: 8px;
 }
 
-.blog-page-content {
+.blog-page-container {
     width: 100%;
     text-align: center;
     padding: 0% 20%;
 }
 
+.blog-content {
+    padding: 1% 0%;
+}
+
+.blog-content p {
+    max-width: fit-content;
+    text-align: left;
+}
+
 @media screen and (max-width: 1400px) {
-    .blog-page-content {
+    .blog-page-container {
         padding: 0% 15%;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .blog-page-content {
+    .blog-page-container {
         padding: 0% 10%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .blog-page-content {
+    .blog-page-container {
         padding: 0% 5%;
     }
 }

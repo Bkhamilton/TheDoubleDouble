@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import './MenuPopup.css';
 
-export default function MenuPopup({onClick}) {
+export default function MenuPopup({onClick, active}) {
   return (
-    <div className="menu-popup">
+    <div className={`menu-popup ${active ? 'active' : '' }`}>
       <button className="close-button" onClick={onClick}>
         <span className="close-icon">X</span>
       </button>

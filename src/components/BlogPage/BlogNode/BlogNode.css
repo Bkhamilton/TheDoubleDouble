@@ -66,12 +66,22 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .blog-node {
-    width: 92%;
+    width: 96%;
   }
 
   .blog-node-outer {
     padding-left: 4%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .blog-node {
+    width: 98%;
+  }
+
+  .blog-node-outer {
+    padding-left: 2%;
   }
 }

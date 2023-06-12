@@ -11,7 +11,7 @@ export default function FeaturedPost() {
           node {
             title
             slug
-            publishedDate(formatString: "DD/MM/YYYY")
+            publishedDate(formatString: "MM/DD/YYYY")
             content {
               internal {
                 content

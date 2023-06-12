@@ -50,7 +50,7 @@ export default function DraftGuideList() {
     return (
         <div className='draft-guide-outer-container'>
             {filteredPlayers.map(player => (
-                <DraftGuidePlayer player={player}/>
+                <DraftGuidePlayer player={player.node}/>
             ))}
         </div>
     )    
