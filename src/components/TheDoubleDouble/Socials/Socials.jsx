@@ -1,6 +1,6 @@
 import * as React from 'react';
 import instaLogo from '../../../images/Instagram_Logo.png';
-import tiktokLogo from '../../../images/TikTok_Logo_3.png';
+import tiktokLogo from '../../../images/Tiktok_Logo_3.png';
 import twitterLogo from '../../../images/Twitter_Logo.png';
 import spotifyLogo from '../../../images/Spotify_Icon_RGB_Green.png';
 import appleLogo from '../../../images/Apple_Podcast_Logo.png';
