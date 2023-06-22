@@ -160,6 +160,7 @@ span {
 
     .draft-guide-box-separator {
         width: 100vw;
+        right: 0px;
     }
 
     .draft-guide-player-size {
