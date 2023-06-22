@@ -21,6 +21,7 @@
 .blog-content p {
     max-width: fit-content;
     text-align: left;
+    color: #212121;
 }
 
 @media screen and (max-width: 1400px) {
