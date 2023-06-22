@@ -14,9 +14,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `The Double Double`,
+    description: `Welcome to the website for The Double Double, an NBA Podcast hosted by Ben Hamilton and J.P. Carey.`,
+    author: `@bkhamilton`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
