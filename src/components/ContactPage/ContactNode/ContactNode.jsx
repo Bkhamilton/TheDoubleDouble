@@ -12,6 +12,7 @@ import axios from 'axios';
 export default function ContactNode() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [alert, setAlert] = useState("");
   
     function handleEmailChange(event) {
         setEmail(event.target.value);
@@ -21,9 +22,19 @@ export default function ContactNode() {
         setMessage(event.target.value);
     };
 
-    function handleSubmit() {
-
-    }
+    function handleSubmit(event) {
+        event.preventDefault(); // Prevent the form submission from refreshing the page
+    
+        if (email.trim() === "" && message.trim() === "") {
+          setAlert("Email and message are required");
+        } else if (email.trim() === "") {
+          setAlert("Email is required");
+        } else if (message.trim() === "") {
+          setAlert("Message is required");
+        } else {
+          sendEmail();
+        }
+      }
 
     const sendEmail = async () => {
         const apiKey = process.env.SENGRID_KEY;
@@ -37,7 +48,7 @@ export default function ContactNode() {
             },
           ],
           from: { email: email },
-          content: [{ type: 'text/plain', value: message }],
+          content: [{ type: 'text/plain', value: `${email} has sent you a message: ${message}` }],
         };
       
         const headers = {
@@ -48,8 +59,12 @@ export default function ContactNode() {
         try {
           const response = await axios.post(url, data, { headers });
           console.log(response.data);
+          setAlert("Email sent successfully!"); // Set success message if desired
+          setEmail(""); // Clear email field after successful submission
+          setMessage(""); // Clear message field after successful submission
         } catch (error) {
           console.log(error);
+          setAlert("Failed to send email. Please try again."); // Set error message if desired
         }
     };
 
@@ -120,11 +135,12 @@ export default function ContactNode() {
                             required
                         />
                     </div>
-                    <button className='send-email-button'>
+                    <button className='send-email-button' onClick={handleSubmit}>
                         <div>
                             <span className='input-label'>Send Message</span>
                         </div>
                     </button>
+                    {alert && <div className="alert"><span className='alert-text'>{alert}</span></div>} {/* Display alert message if present */}
                 </form>
             </div>
         </div>
