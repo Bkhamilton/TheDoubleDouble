@@ -26,7 +26,7 @@ export default function FeaturedEpisode() {
   }, []);
 
   if (!featuredEpisode) {
-    return <div className='main-padding'><h1>Loading...</h1></div>;
+    return <><div className='main-padding'><h1>Featured Episode</h1></div><div className='main-padding'><h1>Loading...</h1></div></>;
   }
 
   return (
