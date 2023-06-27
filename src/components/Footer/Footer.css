@@ -14,7 +14,8 @@
   }
 
   .footer-item {
-    margin: 0;
+    margin: 10px 0px;
+    border: 2px solid black;
     white-space: nowrap;
   }
   
@@ -53,6 +54,11 @@
 @media screen and (max-width: 450px) {
   .footer {
     padding: 4% 2%;
+  }
+
+  .footer-item {
+    margin: 5px 0px;
+    padding: 1%;
   }
   
   .footer-link-text {

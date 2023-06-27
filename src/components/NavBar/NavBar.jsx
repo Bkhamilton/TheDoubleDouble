@@ -15,10 +15,9 @@ export default function NavBar() {
   return (
     <nav className="navbar">
       <div className='navbar-menu'>
-        <button className="menu-button" onClick={handleMenuToggle}>
+        <button className="menu-button" onClick={handleMenuToggle} alt="Menu Button">
           <div>
             <span className='menu-icon'></span>
-            
           </div>
         </button>
         {menuOpen && (
