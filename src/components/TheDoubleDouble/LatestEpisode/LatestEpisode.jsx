@@ -28,9 +28,11 @@ export default function LatestEpisode() {
       fetchData();
     }, []);
   
+    /*
     if (!latestEpisode) {
       return <><div className='main-padding'><h1>Latest Episode</h1></div><div className='main-padding'><h1>Loading...</h1></div></>;
     }
+    */
     
     return (
         <div>
