@@ -17,7 +17,7 @@ export default function TestEpisode() {
                         <a href={`https://open.spotify.com/episode/5XCMWBRbO9ehszSHu7Cr1V?si=f83e825351394db7`} target="_blank" rel="noopener noreferrer" className='spotify-button'>
                             <img src={spotifyIcon} alt="Spotify Listen Button"></img>
                         </a>
-                        <a href='https://podcasts.apple.com/us/podcast/the-chase-down/id1555765326?itsct=podcast_box&itscg=30200' target="_blank" rel="noopener noreferrer" className='apple-podcast-button'>
+                        <a href='https://podcasts.apple.com/us/podcast/2023-nba-draft-review/id1555765326?i=1000618155716' target="_blank" rel="noopener noreferrer" className='apple-podcast-button'>
                             <img src={appleIcon} alt="Apple Podcast Listen Button"></img>
                         </a>
                     </div>
