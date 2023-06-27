@@ -21,11 +21,6 @@ export default function TestEpisode() {
                             <img src={appleIcon} alt="Apple Podcast Listen Button"></img>
                         </a>
                     </div>
-                    <audio controls>
-                        <source type="audio/mpeg" />
-                        <track kind="captions" label="English" default />
-                        Your browser does not support the audio element.
-                    </audio>    
                 </div>
                 <div className='episode-logo-container'>
                     <img src={logo} alt="Double Double Logo"></img>
