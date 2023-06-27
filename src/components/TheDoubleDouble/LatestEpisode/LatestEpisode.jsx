@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import EpisodeNode from '../EpisodeNode/EpisodeNode';
 import { getAccessToken } from '../../Helpers/spotify';
 import './LatestEpisode.css';
+import TestEpisode from '../TestEpisode/TestEpisode';
 
 export default function LatestEpisode() {
     const [latestEpisode, setLatestEpisode] = useState(null);
@@ -36,7 +37,7 @@ export default function LatestEpisode() {
             <div className='main-padding'>
                 <h1>Latest Episode</h1>
             </div>
-            <EpisodeNode episode={latestEpisode}/>
+            <TestEpisode/>
         </div>
     );
 };
