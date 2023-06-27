@@ -50,7 +50,7 @@ span {
 }
 
 .draft-guide-player-name {
-    margin-left: 10px; /* set the gap between rank and name */
+    margin-left: 5px; /* set the gap between rank and name */
 }
 
 .info-text, .player-name {
