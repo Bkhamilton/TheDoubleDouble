@@ -46,8 +46,8 @@ export default function DraftGuidePlayer({ player }) {
           <div className='draft-guide-player-name'>
               <span className={`${player.name.length < 18 ? "player-name" : "player-name-long"}`}>{player.name}</span>
           </div>
-          <span className='info-text draft-text-desktop'>{player.team}</span>
-          <span className='info-text draft-text-position'>{player.position}</span>
+          <span className={`${player.name.length < 18 ? "info-text" : "player-name-long"} draft-text-desktop`}>{player.team}</span>
+          <span className={`${player.name.length < 18 ? "info-text" : "player-name-long"} draft-text-position`}>{player.position}</span>
           <div className='draft-guide-player-size'>
               <span>Height: {player.height}</span>
               <span>Weight: {player.weight}</span>
