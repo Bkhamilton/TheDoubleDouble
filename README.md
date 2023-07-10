@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://thedoubledoublemaster.gatsbyjs.io/">
-    <img alt="Double Double" src="src/images/Double Double Logo.png" />
+    <img alt="Double Double" src="./src/images/Double Double Logo.png" />
   </a>
 </p>
 <h1 align="center">
