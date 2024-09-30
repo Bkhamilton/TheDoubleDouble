@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import EpisodeNode from '../EpisodeNode/EpisodeNode';
 import { getAccessToken } from '../../Helpers/spotify';
 import './FeaturedEpisode.css';
+import TestEpisode2 from '../TestEpisode2/TestEpisode2';
 
 export default function FeaturedEpisode() {
   const [featuredEpisode, setFeaturedEpisode] = useState(null);
@@ -34,7 +35,7 @@ export default function FeaturedEpisode() {
       <div className='main-padding'>
         <h1>Featured Episode</h1>
       </div>
-      <EpisodeNode episode={featuredEpisode}/>
+      <TestEpisode2/>
     </div>
   );
 }
